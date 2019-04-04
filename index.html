@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<script>
+	function wdOpen(){
+		document.getElementById("wdscreen").style.width = "100%";
+	}
+
+	function wdClose(){
+		document.getElementById("wdscreen").style.width = "0%";
+	}
+
+	function muOpen(){
+		document.getElementById("muscreen").style.width = "100%";
+	}
+
+	function muClose(){
+		document.getElementById("muscreen").style.width = "0%";
+	}
+
+	function veOpen(){
+		document.getElementById("vescreen").style.width = "100%";
+	}
+
+	function veClose(){
+		document.getElementById("vescreen").style.width = "0%";
+	}
+
+	function gpOpen(){
+		document.getElementById("gpscreen").style.width = "100%";
+	}
+
+	function gpClose(){
+		document.getElementById("gpscreen").style.width = "0%";
+	}
+	
+</script>
+
+</head>
+
+<body>
+<div id = "wdscreen"  class = "sidenav">
+	<a href= "javascript:void(0)" class = "closebtn" onclick = "wdClose()">	&laquo;</a>
+	<h1> Coming Soon. </h1>
+	<p>This is a test. For testing purposes.</p>
+</div>
+<div id = "vescreen"  class = "sidenav">
+	<a href= "javascript:void(0)" class = "closebtn" onclick = "veClose()">	&laquo;</a>
+	<h1> Editing Samples. </h1>
+	<div class = "slidescon">
+
+		 <div class="veSlides">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/videoseries?list=PLWIjbqZvQ9UQM5rE72y-Z75VkKZMPOLHx" preload="metadata" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+	</div>
+	<br>
+	<div style= "text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+	<span class="dot" onclick="currentSlide(4)"></span> 
+	</div>
+</div>
+<div id = "muscreen"  class = "sidenav">
+	<a href= "javascript:void(0)" class = "closebtn" onclick = "muClose()">	&laquo;</a>
+	<h1> Coming Soon. </h1>
+	<p>This is a test. For testing purposes.</p>
+</div>
+<div id = "gpscreen"  class = "sidenav">
+	<a href= "javascript:void(0)" class = "closebtn" onclick = "gpClose()">	&laquo;</a>
+	<h1> Coming Soon. </h1>
+	<p>This is a test. For testing purposes.</p>
+</div>
+
+
+
+<div id = "navbar">
+	<a href="javascript:void(0)" id = "wd" onclick ="wdOpen()">Web Design<i class="fas fa-globe"></i></a>
+	<a href="javascript:void(0)" id = "mu" onclick ="muOpen()">Music<i class="fas fa-headphones"></i></a>
+	<a href="javascript:void(0)" id = "ve" onclick ="veOpen()">Video Editing<i class="fas fa-video"></i></a>
+	<a href="javascript:void(0)" id = "gp" onclick ="gpOpen()">Game Programming<i class="fas fa-gamepad"></i></a>
+</div>
+<div id = "sub">
+		<p><<<--- Click a tab to see a world in color.</p>
+</div>
+
+<div id = "title">
+
+	<span id = "name">
+		<p>Rory Grant</p>
+	</span>
+	<span id = "res">
+		<a href="Resume.pdf" download>Resume</a>
+	</span>
+</div>
+
+
+</body>
+</html>
+

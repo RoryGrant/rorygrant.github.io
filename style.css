@@ -1,0 +1,147 @@
+
+body {
+ font-family: Tahoma, Geneva, sans-serif;
+ background-image: url(site.png); 
+ background-size: 100%;
+}
+
+#vescreen h1{
+float:center;
+margin-left:25%;
+}
+
+.veSlides{
+	float:center;
+	margin-left:15%;
+}
+
+#title{
+	text-align:center;
+	float:center;
+
+}
+
+#sub{
+width:50%;
+text-align:center;
+float:center;
+color: rgba(142,142,142,0.1);
+font-size: 50px;
+padding-left: 50px;
+}
+
+#sub :hover{
+color: rgba(162,162,162,0.6);
+font-size: 50px;
+padding-left: 60px;
+}
+
+#name {
+color: rgba(236,240,241,0.9);
+font-size: 150px;
+
+}
+
+#navbar a{
+
+	position: absolute;
+	left: -200px;
+	transition: 0.3s;
+	padding: 10px;
+	width: 240px;
+	text-align: left;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 0 5px 5px 0;
+	color: black;
+}
+
+#navbar a:hover {
+left:0px;
+
+}
+
+#navbar #wd {
+  top: 20px;
+  background-color: mediumturquoise;
+  
+}
+
+#navbar #mu {
+  top: 80px;
+  background-color: green;
+  
+}
+
+#navbar #ve {
+  top: 140px;
+  background-color: lime;
+
+}
+
+#navbar #gp {
+  top: 200px;
+  background-color: yellow;
+}
+
+i.fas{
+
+float:right;
+}
+
+.sidenav {
+height:100%;
+z-index:5;
+position: fixed;
+top:0;
+left:0;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 80px;
+color: black;
+}
+
+.sidenav .closebtn{
+position: absolute;
+text-decoration: none;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+color: black;
+}
+
+#wdscreen {
+background-color: mediumturquoise;
+width:0%;
+}
+
+#muscreen {
+background-color: green;
+width:0%;
+}
+
+#vescreen {
+background-color: lime;
+width:0%;
+}
+
+#gpscreen {
+background-color: yellow;
+width:0%;
+}
+
+#res a{
+  position:fixed;
+  top: 55%;
+  right: 45%;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  border-radius: 5px 5px 5px 5px;
+}
