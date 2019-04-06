@@ -44,9 +44,9 @@ body{
 #playlist{
   overflow:hidden;
   position: relative;
-  width:70%;
+  width:15%;
   padding-bottom: 56.25%; 
-  height: 0;
+  height: 0.5;
   margin:.69vw;
   font-size:1vw;
   
@@ -70,12 +70,12 @@ body{
 }
 
 #playlist .playpause{
-	height:2.8vw;
-	width:2.8vw;
+	display: inline-block;
+	height:2.4vw;
+	width:2.4vw;
 	background-color:green;
 	position: relative;
 	float:center;
-	margin:.69vw;
 	text-align:center;
 	text-decoration:none;
 	color:white;
@@ -83,6 +83,10 @@ body{
 	cursor: pointer;
 	border:.69vw solid #2e282a;
 
+}
+
+#veply{
+	margin-left:.69vw;
 }
 
 #unist-box{
