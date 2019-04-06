@@ -4,45 +4,69 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+		 $("#playlist .listcontainer").on("click", function() {
+			$("#veVideo").attr({
+				"src": $(this).attr("vidfile"),
+				"poster": "",
+				"autoplay": "autoplay"
+			})
+		  })
+		 $("#veVideo").attr({
+			"src": $("#playlist .listcontainer").eq(0).attr("vidfile"),
+			"poster": $("#playlist .listcontainer").eq(0).attr("thumb")
+		 })
+		})
+
+		function wdOpen(){
+			document.getElementById("wdscreen").style.width = "100%";
+		}
+
+		function wdClose(){
+			document.getElementById("wdscreen").style.width = "0%";
+		}
+
+		function muOpen(){
+			document.getElementById("muscreen").style.width = "100%";
+		}
+
+		function muClose(){
+			document.getElementById("muscreen").style.width = "0%";
+		}
+
+		function veOpen(){
+			document.getElementById("vescreen").style.width = "100%";
 	
-<script>
-	function wdOpen(){
-		document.getElementById("wdscreen").style.width = "100%";
-	}
+		}
 
-	function wdClose(){
-		document.getElementById("wdscreen").style.width = "0%";
-	}
+		function veClose(){
+			document.getElementById("vescreen").style.width = "0%";
+			document.getElementById("veVideo").pause();
 
-	function muOpen(){
-		document.getElementById("muscreen").style.width = "100%";
-	}
+		}
 
-	function muClose(){
-		document.getElementById("muscreen").style.width = "0%";
-	}
+		function gpOpen(){
+			document.getElementById("gpscreen").style.width = "100%";
+		}
 
-	function veOpen(){
-		document.getElementById("vescreen").style.width = "100%";
-	}
+		function gpClose(){
+			document.getElementById("gpscreen").style.width = "0%";
+		}
 
-	function veClose(){
-		document.getElementById("vescreen").style.width = "0%";
-	}
+		function playit(){
+			document.getElementById("veVideo").play();
+		}
 
-	function gpOpen(){
-		document.getElementById("gpscreen").style.width = "100%";
-	}
-
-	function gpClose(){
-		document.getElementById("gpscreen").style.width = "0%";
-	}
-	
-</script>
-
+		function pauseit(){
+			document.getElementById("veVideo").pause();
+		}
+	</script>
 </head>
 
 <body>
+<div class = "bg">
 <div id = "wdscreen"  class = "sidenav">
 	<a href= "javascript:void(0)" class = "closebtn" onclick = "wdClose()">	&laquo;</a>
 	<h1> Coming Soon. </h1>
@@ -53,16 +77,35 @@
 	<h1> Editing Samples. </h1>
 	<div class = "slidescon">
 
-		 <div class="veSlides">
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/videoseries?list=PLWIjbqZvQ9UQM5rE72y-Z75VkKZMPOLHx" preload="metadata" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-	</div>
-	<br>
-	<div style= "text-align:center">
-	<span class="dot" onclick="currentSlide(1)"></span> 
-	<span class="dot" onclick="currentSlide(2)"></span> 
-	<span class="dot" onclick="currentSlide(3)"></span> 
-	<span class="dot" onclick="currentSlide(4)"></span> 
+	
+	 <div class="veSlides">
+		<video id="veVideo" controls loop poster="" src=""></video>
+		 <div id = "playlist">
+				<div class = "listcontainer" id = "unist-box"  thumb ="profnj.github.io/UNISTthumb.png" vidfile = "profnj.github.io/UNIST short.webm">
+					<p>UNIST Primer</p>
+				 </div>
+
+				<div class = "listcontainer" id = "palu-box" thumb ="profnj.github.io/Paluthumb.png" vidfile = "profnj.github.io/palu.webm">
+					<p>P-TV Intro Mockup</p>
+				 </div>
+
+				<div class = "listcontainer" id = "wagner-box" thumb ="profnj.github.io/Wagnerthumb.png" vidfile = "profnj.github.io/Wagner.webm">
+					<p>Wagner Tutorial Mockup</p>
+				 </div>
+
+				<div class = "listcontainer" id = "anne-box" thumb ="profnj.github.io/Annethumb.png" vidfile = "profnj.github.io/anne.webm">
+					<p>Bump for [wsg] Bumpers YT channel</p>
+				</div>
+
+				<div class = "playpause" onclick = "playit()">
+					<i class="fas fa-play-circle"></i>
+				</div>
+				<div class = "playpause" onclick = "pauseit()">
+					<i class="fas fa-pause-circle"></i>
+				</div>
+		  </div>
+	  </div>
+	
 	</div>
 </div>
 <div id = "muscreen"  class = "sidenav">
@@ -98,7 +141,7 @@
 	</span>
 </div>
 
-
+</div>
 </body>
 </html>
 
