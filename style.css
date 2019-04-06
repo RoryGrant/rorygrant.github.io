@@ -19,6 +19,7 @@ body{
 #vescreen h1{
  float:center;
  margin-left:25%;
+ font-size:1.4vw;
 }
 
 .veSlides{
@@ -46,41 +47,41 @@ body{
   width:70%;
   padding-bottom: 56.25%; 
   height: 0;
-  margin:10px;
-  z-index:-1;
+  margin:.69vw;
+  font-size:1vw;
   
 }
 
 #playlist .listcontainer{
-	height:100px;
-	width:100px;
+	height:5.6vw;
+	width:5.6vw;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	float:center;
-	margin:10px;
+	margin:.69vw;
 	text-decoration:none;
 	color:white;
 	font-weight:bold;
 	cursor: pointer;
-	border:10px solid #2e282a;
+	border:.69vw solid #2e282a;
 
 }
 
 #playlist .playpause{
-	height:50px;
-	width:50px;
+	height:2.8vw;
+	width:2.8vw;
 	background-color:green;
 	position: relative;
 	float:center;
-	margin:10px;
+	margin:.69vw;
 	text-align:center;
 	text-decoration:none;
 	color:white;
 	font-weight:bold;
 	cursor: pointer;
-	border:10px solid #2e282a;
+	border:.69vw solid #2e282a;
 
 }
 
