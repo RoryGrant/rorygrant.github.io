@@ -29,6 +29,7 @@ body{
   padding-bottom: 56.25%; 
   height: 0;
   margin:10px;
+  
 }
 
 .veSlides video{
@@ -48,6 +49,7 @@ body{
   padding-bottom: 56.25%; 
   height: 0.5;
   margin:.69vw;
+  padding-top:.8vw;
   font-size:1vw;
   
 }
