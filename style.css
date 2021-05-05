@@ -54,6 +54,12 @@ body{
   
 }
 
+#icons{
+	float:center;
+	top: 55%;
+  	right: 45%;
+}
+
 #playlist .listcontainer{
 	height:5.6vw;
 	width:5.6vw;
@@ -77,7 +83,6 @@ body{
 	width:2.4vw;
 	background-color:green;
 	position: relative;
-	float:center;
 	text-align:center;
 	text-decoration:none;
 	color:white;
@@ -95,7 +100,7 @@ body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("UNISTthumb.png");
 }
 
-#unist-box: hover{
+#unist-box:hover{
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("UNISTthumb.png");
 }
 
@@ -103,7 +108,7 @@ body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Paluthumb.png");
 }
 
-#palu-box: hover{
+#palu-box:hover{
 	background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("Paluthumb.png");
 }
 
@@ -111,7 +116,7 @@ body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Wagnerthumb.png");
 }
 
-#wagner-box: hover{
+#wagner-box:hover{
 	background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("Wagnerthumb.png");
 }
 
@@ -119,8 +124,24 @@ body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Annethumb.png");
 }
 
-#anne-box: hover{
+#anne-box:hover{
 	background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("Annethumb.png");
+}
+
+#toku-box{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tokuthumb.png");
+}
+
+#toku-box:hover{
+	background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("Tokuthumb.png");
+}
+
+#SG-box{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("SGthumb.png");
+}
+
+#SG-box:hover{
+	background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("SGthumb.png");
 }
 
 #title{
