@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+	<title>Rory Grant's Portfolio</title>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -53,10 +54,12 @@
 
 		function gpOpen(){
 			document.getElementById("gpscreen").style.width = "100%";
+			document.getElementById("gpvid").play();
 		}
 
 		function gpClose(){
 			document.getElementById("gpscreen").style.width = "0%";
+			document.getElementById("gpvid").pause();
 		}
 
 		function playit(){
@@ -70,6 +73,7 @@
 </head>
 
 <body>
+
 <div class = "bg">
 <div id = "wdscreen"  class = "sidenav">
 	<a href= "javascript:void(0)" class = "closebtn" onclick = "wdClose()">	&laquo;</a>
@@ -97,8 +101,12 @@
 					<p>Wagner Tutorial Mockup</p>
 				 </div>
 
-				<div class = "listcontainer" id = "anne-box" thumb ="Annethumb.png" vidfile = "anne.webm">
-					<p>Bump for [wsg] Bumpers YT channel</p>
+				<div class = "listcontainer" id = "LSH-box" thumb ="LSHthumb.png" vidfile = "LSH.webm">
+					<p>Infovid for Company</p>
+				</div>
+
+				<div class = "listcontainer" id = "FB-box" thumb ="FBthumb.png" vidfile = "FIGHTBACK TRIM.webm">
+					<p>Trailer for Online Tournament</p>
 				</div>
 
 				<div class = "listcontainer" id = "toku-box" thumb ="Tokuthumb.png" vidfile = "toku.webm">
@@ -120,36 +128,47 @@
 </div>
 <div id = "gpscreen"  class = "sidenav">
 	<a href= "javascript:void(0)" class = "closebtn" onclick = "gpClose()">	&laquo;</a>
+	
 	<h1> Some projects I'm working on.</h1>
-	<iframe frameborder="0" src="https://itch.io/embed/841621?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=2ce8f4&amp;border_color=363636" width="552" height="167"><a href="https://profnj.itch.io/circuit">CIRCUIT by Prof!</a></iframe>
-</div>
+	<iframe title="Circuit Link" src="https://itch.io/embed/841621?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=2ce8f4&amp;border_color=363636" width="552" height="167"><a href="https://profnj.itch.io/circuit">CIRCUIT by Prof!</a></iframe>
+	<div class="veSlides">
+	<video id = "gpvid" video loop autoplay>
+		<source src="progress.mp4" type="video/mp4">
+	</video>
+	</div>
+	</div>
 
 
 
 <div id = "navbar">
-	<a href="javascript:void(0)" id = "wd" onclick ="wdOpen()">About Me<i class="fas fa-globe"></i></a>
-	<a href="javascript:void(0)" id = "mu" onclick ="muOpen()">Music<i class="fas fa-headphones"></i></a>
-	<a href="javascript:void(0)" id = "ve" onclick ="veOpen()">Video Editing<i class="fas fa-video"></i></a>
-	<a href="javascript:void(0)" id = "gp" onclick ="gpOpen()">Programming<i class="fas fa-gamepad"></i></a>
+	<a href="javascript:void(0)" id = "wd" onclick ="wdOpen()">About Me <em class="fas fa-globe"></em></a>
+	<a href="javascript:void(0)" id = "mu" onclick ="muOpen()">Music <em class="fas fa-headphones"></em></a>
+	<a href="javascript:void(0)" id = "ve" onclick ="veOpen()">Video Editing <em class="fas fa-video"></em></a>
+	<a href="javascript:void(0)" id = "gp" onclick ="gpOpen()">Programming <em class="fas fa-gamepad"></em></a>
 </div>
-<div id = "sub">
-		<p><<<--- Click a tab to see a world in color.</p>
-</div>
+
+
 
 <div id = "title">
 
 	<span id = "name">
 		<p>Rory Grant</p>
+		<p id = "subtitle">Video Editor - Programmer</p>
 	</span>
-	<span id = "icons">
-		<a href="https://www.youtube.com/channel/UCeYYouxprcHCkK9Q2c8SPVA"><img src ="youtube-64.png" alt="My Youtube"></a>
-		<a  href ="https://github.com/ProfNJ"><img src ="GitHub-Mark-Light-64px.png" alt="My Github"></a>
-	</span>
-	</span>
-	<span id = "res">
+
+	
+	<div id = "flex">
+		<div id = "res">
 		<a href="Rory Grant - Resume.pdf" download>Resume</a>
-	</span>
+		</div>
+		<div id = "icons">
+			<a href="https://www.youtube.com/channel/UCeYYouxprcHCkK9Q2c8SPVA"><img src ="youtube-64.png" alt="My Youtube"></a>
+			<a href ="https://github.com/ProfNJ"><img src ="GitHub-Mark-Light-64px.png" alt="My Github"></a>
+		</div>
+		
+	</div>
 </div>
+
 
 </div>
 </body>
